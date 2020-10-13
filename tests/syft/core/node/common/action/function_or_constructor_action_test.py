@@ -11,6 +11,7 @@ from syft.core.node.common.action.function_or_constructor_action import (
 # TODO test execution
 # TODO test permissions
 
+
 def test_run_function_or_constructor_action_serde() -> None:
     alice = sy.VirtualMachine(name="alice")
     alice_client = alice.get_client()
