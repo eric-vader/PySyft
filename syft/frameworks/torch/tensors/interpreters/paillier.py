@@ -173,7 +173,7 @@ class PaillierTensor(AbstractTensor):
 
         # if self is encrypted and args[0] is not encrypted
         else:
-            out.child = self.child.dot(args[0])
+            out.child = self.child.dot(args[0].detach())
 
         return out
 
